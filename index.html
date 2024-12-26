@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>excel</title>
+</head>
+<body>
+    <h1>Filter Duplicates</h1>
+    <p>Paste your tabular data below (columns separated by tabs, rows by new lines).</p>
+
+    <textarea id="dataInput" placeholder="Paste your data here (e.g., copied from Excel)."></textarea>
+    <button onclick="filterDuplicates()">Filter Duplicates</button>
+
+    <h2>Duplicates</h2>
+    <table id="duplicatesTable">
+        <thead>
+            <tr>
+                <th>Customer Name</th>
+                <th>Address</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Duplicates will appear here -->
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
